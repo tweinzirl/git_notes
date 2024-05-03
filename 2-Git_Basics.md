@@ -31,9 +31,19 @@ Use `git diff` to list changes in files that have been Modified but not yet Stag
 To compare Staged files with the last commit, use `git diff --staged`.
 
 ### Commiting files
-git commit
+Common usages of `git commit`:
+  - The most straightforward way to commit Staged files is `git commit - 'commit message'`
+  - To automatically stage every tracked file before committing, use `git commit -a -m 'commit message'`
+  - To update the previous commit with any currently staged files, use `git commit --amend`. The use case is like
+```bash
+git commit -m 'Initial commit'
+git add forgotten_file
+git commit --amend
+```
 
 ### Remove file
+  - To remove a file from the index and filesystem: `git rm <file>`
+  - To remove from the index only: `git rm --cached <file>`
 
 ### Undoing changes
 
