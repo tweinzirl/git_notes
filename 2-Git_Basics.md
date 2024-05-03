@@ -31,7 +31,8 @@ Use `git diff` to list changes in files that have been Modified but not yet Stag
 To compare Staged files with the last commit, use `git diff --staged`.
 
 ### Commiting files
-Common usages of `git commit`:
+This applies to files that have been staged with `git add`. Note that a Staged file must be restaged after modification;
+otherwise the commit will not occur with the latest version of the file. Common usages of `git commit`:
   - The most straightforward way to commit Staged files is `git commit - 'commit message'`
   - To automatically stage every tracked file before committing, use `git commit -a -m 'commit message'`
   - To update the previous commit with any currently staged files, use `git commit --amend`. The use case is like
@@ -46,9 +47,17 @@ git commit --amend
   - To remove from the index only: `git rm --cached <file>`
 
 ### Undoing changes
+Revert a Staged file to its initial state:
+  - `git reset HEAD <file>`
+  - or `git restore --staged <file>`
+Restore Modified files:
+  - `git checkout -- <file>`
+  - or `git restore <file>`
 
 ### Fetching and pulling from remote servers
+Use `git fetch` to retrieve data on the server not yet present in the local copy. Important: branches are not merged by `git fetch`.
+Instead, use `git pull` to both fetch and merge in one shot.
 
 ### Pushing to the server
-
+The pattern is `git push <remote> <branch>`. Example: `git push origin master`.
 ### Git log
