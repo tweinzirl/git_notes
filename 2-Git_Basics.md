@@ -35,7 +35,7 @@ This applies to files that have been staged with `git add`. Note that a Staged f
 otherwise the commit will not occur with the latest version of the file. Common usages of `git commit`:
   - The most straightforward way to commit Staged files is `git commit - 'commit message'`
   - To automatically stage every tracked file before committing, use `git commit -a -m 'commit message'`
-  - To update the previous commit with any currently staged files, use `git commit --amend`. The use case is like
+  - To update the previous commit with any currently Staged files, use `git commit --amend`. The use case is like
 ```bash
 git commit -m 'Initial commit'
 git add forgotten_file
