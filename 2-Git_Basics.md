@@ -46,6 +46,8 @@ git commit --amend
   - To remove a file from the index and filesystem: `git rm <file>`
   - To remove from the index only: `git rm --cached <file>`
 
+[Section 2.4](https://git-scm.com/book/en/v2/Git-Basics-Undoing-Things)
+
 ### Undoing changes
 Revert a Staged file to its initial state:
   - `git reset HEAD <file>`
@@ -58,6 +60,11 @@ Restore Modified files:
 Use `git fetch` to retrieve data on the server not yet present in the local copy. Important: branches are not merged by `git fetch`.
 Instead, use `git pull` to both fetch and merge in one shot.
 
+[Section 2.5](https://git-scm.com/book/en/v2/Git-Basics-Working-with-Remotes)
+
 ### Pushing to the server
 The pattern is `git push <remote> <branch>`. Example: `git push origin master`.
-### Git log
+
+[Section 2.3](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
+
+### Viewing Commit History
