@@ -68,3 +68,12 @@ The pattern is `git push <remote> <branch>`. Example: `git push origin master`.
 [Section 2.3](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 
 ### Viewing Commit History
+Example usages of `git log`:
+  - `git log`
+  - `git log -p -2` (view patches for last two commits)
+  - `git log --stat` (abbreviated stats per each commit)
+  - `git log --pretty=oneline` (format the commits on oneline)
+  - `git log --since=2.weeks` (commits from the last two weeks)
+  - `git log --author <author>` (filter by commit author)
+  - `git log --grep <string>` (search commit messages for a string)
+  - `git log -S <string>` (show commits that add or remove a string) 
