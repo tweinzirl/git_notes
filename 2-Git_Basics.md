@@ -1,3 +1,5 @@
+[Section 2.1](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
+
 ### Getting a git repository
 There are two ways set up a local repository:
   - clone it using `git clone https://github.com/user/some_repo`
@@ -7,6 +9,8 @@ git init
 git add .  # '.' means local working directory; can also add files separately
 git commit -m 'commit message'
 ```
+
+[Section 2.2](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository)
 
 ### File states
 There are two kinds of files in git: `tracked` (meaning the file was present in the last commit snapshot) and `untracked`.
@@ -20,8 +24,11 @@ from the book shows how files may transition between these labels. The figure sa
 
 
 ### File status
+Use `git status` or `git status -s` to summarize the status of files in the working directory.
 
-### File differences
+### Viewing differences in Modified and Staged files
+Use `git diff` to list changes in files that have been Modified but not yet Staged.
+To compare Staged files with the last commit, use `git diff --staged`.
 
 ### Commiting files
 git commit
