@@ -33,7 +33,7 @@ To compare Staged files with the last commit, use `git diff --staged`.
 ### Commiting files
 This applies to files that have been staged with `git add`. Note that a Staged file must be restaged after modification;
 otherwise the commit will not occur with the latest version of the file. Common usages of `git commit`:
-  - The most straightforward way to commit Staged files is `git commit - 'commit message'`
+  - The most straightforward way to commit Staged files is `git commit -m 'commit message'`
   - To automatically stage every tracked file before committing, use `git commit -a -m 'commit message'`
   - To update the previous commit with any currently Staged files, use `git commit --amend`. The use case is like
 ```bash
@@ -52,6 +52,7 @@ git commit --amend
 Revert a Staged file to its initial state:
   - `git reset HEAD <file>`
   - or `git restore --staged <file>`
+    
 Restore Modified files:
   - `git checkout -- <file>`
   - or `git restore <file>`
